@@ -1,0 +1,28 @@
+body{
+  background-color: darkgoldenrod;
+}
+
+.mission-div{
+justify-items: center;
+margin-top: 15%;
+}
+
+.mission{
+background-color: darkgreen;
+padding: 12px;
+color: white;
+margin-left: -35px;
+}
+.misson-statement{
+width: 500px;
+text-align: left;
+font-size: x-large;
+
+}
+
+@media(max-width:660px){
+  .misson-statement{
+    font-size:large;
+    width: 300px;
+  }
+}

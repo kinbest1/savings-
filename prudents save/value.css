@@ -1,0 +1,29 @@
+body{
+  background-color: darkgoldenrod;
+}
+.ol-list-div{
+  justify-items: center;
+    margin-top: 10%;
+}
+.value{
+  background-color: darkgreen;
+    padding: 12px;
+    margin-left: -45px;
+    color: white;
+}
+.ol-list{
+  display: block;
+}
+
+.list{
+  width: 500px;
+    text-align: left;
+    font-size: x-large;
+}
+
+@media(max-width:660px){
+  .list{
+    font-size:large;
+    width: 300px;
+  }
+}

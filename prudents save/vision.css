@@ -1,0 +1,25 @@
+body{
+  background-color: darkgoldenrod;
+}
+.visions{
+  justify-items: center;
+    margin-top: 15%;
+}
+.vision-head{
+  background-color: darkgreen;
+  padding: 12px;
+  margin-left: -45px;
+  color: white;
+}
+.vision{
+width: 500px;
+  text-align: left;
+  font-size: x-large;
+}
+
+@media(max-width:660px) {
+  .vision {
+    font-size: large;
+    width: 300px;
+  }
+}

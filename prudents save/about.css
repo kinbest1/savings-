@@ -1,0 +1,44 @@
+body{
+  background-color: darkgoldenrod;
+}
+.about-div{
+  display: block;
+  justify-items: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.about-head{
+  background-color: darkgreen;
+  color: white;
+  padding: 8px;
+}
+.about{
+  width: 500px;
+  font-size: larger;
+}
+.join-us-call,.listing,.rates,.ul-listos,.phrase,.memberdhip,.calls,.num1{
+  font-size: larger;
+}
+
+@media(max-width:660px){
+  .join,
+    .listing,
+    .rates,
+    .ul-listos,
+    .phrase,
+    .memberdhip,
+    .calls,
+    .num1,.about {
+      font-size: medium;
+      justify-content: center;
+
+    }
+    .about{
+      width: 400px;
+        font-size: medium;
+    }
+    .more-info{
+      text-align: center;
+    }
+}

@@ -1,0 +1,389 @@
+body{
+    margin: 0;
+    padding: 0;
+  font-family: -serif;
+  background-color: dimgrey;
+}
+div .prudent-heading{
+  position: relative;
+  color:white;
+  font-size:x-large;
+  font-weight: 900px;
+  background-color: darkgreen;
+  max-width: fit-content;
+  padding: 10px 40px;
+  margin-left: 25px;
+  border-radius: 25px;
+  animation: ease-in head 3s;
+}
+@keyframes head{
+  0%{
+   transform: translateX(-100px);
+  }
+  50%{
+   transform: translateX(100px);
+  }
+  100%{
+   transform: translateY(100px);
+  }
+}
+header{
+    position: fixed;
+    right: 0;
+    top:0;
+    left: 0;
+    z-index: 200;
+    
+}
+.thumnail{
+  display: none;
+}
+.nav-display-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   z-index: 200;
+   background-color: darkgreen;
+    height: 70px;
+}
+.nav-image{
+    width: 70px;
+    cursor: pointer;
+}
+.thumnail{
+padding: 10px;
+cursor: pointer;
+}
+.thumnail{
+    width: 25px;
+}
+.header-main-div{
+    display: block;
+    padding-top: 14px;
+   
+}
+
+.nav-ul-div{
+    display: block;
+}
+.ul-diplay-flex{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    cursor: pointer;
+}
+.li-margins{
+    padding: 12px;
+    text-transform: uppercase;
+    color: aliceblue;
+    transition: color 2s;
+}
+.li-margins:hover{
+color: darkgoldenrod;
+
+}
+
+.main-body{
+   padding-top: 80px;
+    background-image: url(prudent\ logo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        display: block;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+}
+
+.main-body::before{
+  content: " ";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+ background-color: rgba(0, 0, 0, 0.818);
+
+}
+
+
+.savings-package{
+  color: rgb(254, 255, 254);
+  position: relative;
+
+}
+.slide-1,.info{
+  color:rgb(255,255,255);
+  position: relative;
+ margin: 0;
+}
+.savings-package{
+  margin-top: 40px;
+  text-align: center;
+}
+.individual-slide{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 50px;
+  text-align:left;
+  margin: 25px;
+}
+.registration{
+  text-align: center;
+  margin-top: 50px;
+}
+.register{
+  padding: 6px 30px ;
+  font-size: large;
+  background-color: darkgreen;
+  color: white;
+  position: relative;
+  border-radius: 25px;
+  border: none;
+  margin-left: 20px;
+}
+.reg{
+  padding:6px 60px;
+}
+footer{
+  background-color: rgb(84, 82, 82);
+ padding-bottom: 25px;
+ padding-top: 0;
+ margin-top: 0;
+}
+
+
+.footer-div-flex{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+
+ 
+}
+.left-foot-address{
+  display: block;
+  
+}
+.sales-info{
+ box-sizing: border-box;
+ border: 4px solid darkgoldenrod;
+ padding: 4px;
+ border-radius: 25px;
+ text-transform: uppercase;
+ color:white
+}
+.office-address,.adrres{
+  text-transform: capitalize;
+  font-weight: bolder;
+  text-align: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+font-size: larger;
+}
+
+.call-info{
+  box-sizing: border-box;
+  text-transform: uppercase;
+  border-radius: 25px;
+  border: 4px solid darkgoldenrod;
+  color: white;
+  width: fit-content;
+  padding: 4px;
+}
+.right-foot-address{
+  display: inline;
+  justify-content: space-around;
+}
+.mail-span{
+  font-weight: 900;
+  font-size: larger;
+}
+.numbers{
+  display: block;
+  padding: 0px;
+  padding: 0;
+
+}
+.number{
+  font-size: larger;
+ padding-left: 40px;
+ margin-right: 28px;
+ line-height: 6px;
+ color: rgb(2, 43, 2);
+}
+.last-italic-text{
+  text-align: center;
+ font-style: italic;
+ font-weight: bolder;
+ word-spacing: normal;
+ padding: 0;
+ margin: 0;
+ font-size: larger;
+}
+
+
+.image-div{
+text-align: center;
+}
+.image-div .slide-images{
+  position: relative;
+  aspect-ratio: 1/1;
+  width: 250px;
+  margin: 2px;
+
+}
+ .img1{
+  position: absolute;
+  animation-name: move1;
+  animation-delay:1s;
+  animation-duration: 4s;
+ }
+ @keyframes move1{
+  0%{transform: rotate(0);
+    margin-left: -500px;
+    visibility: hidden;
+
+  }
+  25%{
+    transform: rotate(360deg);
+  }
+  50%{
+    border-radius: 25px;
+  }
+  100% {
+    border-radius: 25%px;
+  }
+ }
+
+ .img2 {
+   position: absolute;
+   animation-name: move2;
+   animation-duration: 4s;
+ }
+
+ @keyframes move2 {
+   0% {
+     visibility: hidden;
+
+   }
+
+   25% {
+     transform: rotate(360deg);
+   }
+
+   50% {
+     border-radius: 25%;
+     transform-origin: right;
+   }
+
+   100% {
+     border-radius: 50%;
+   }
+  }
+
+  @media(max-width:1070px){
+   .image-div .slide-images{
+    width: 200px;
+    
+   }
+     .sales-info {
+       font-size: medium;
+       margin-right: 40px;
+     }
+      
+      .adrres{
+        font-size: medium;
+      }
+   
+  }
+  @media(max-width:900px){
+   .image-div .slide-images{
+    width: 150px;
+    
+   }
+     div .prudent-heading, .adrres{
+      
+       font-size: medium;
+       font-weight: 600px;
+     }
+      
+     .hideNav{
+      display: none;
+     }
+     .sales-info{
+      font-size: small;
+      margin-right: 40px;
+     }
+        
+         .adrres{
+          font-size: small;
+         }
+    
+  }
+  @media(max-width:660px){
+    .nav-ul-div{
+      margin-top: 250px;
+     position: absolute;
+     right: 10px;
+    }
+    
+    
+    .footer-div-flex, .right-foot-address{
+      display: block;
+      justify-items: center;
+    }
+    .sales-info{
+     
+     display: none;
+    }
+
+    .adrres{
+      font-size: large;
+    }
+
+    .individual-slide{
+      display: block;
+    }
+
+    .monthly-div{
+      margin-bottom: 25px;
+    }
+    .prudent-heading{
+      font-size: 200px;
+    }
+    .sales-info{
+     width: 34px;
+    }
+
+    .ul-diplay-flex{
+      display: block;
+      background-color:darkgoldenrod;
+    }
+    .li-margins{
+      color: white
+    }
+    .li-margins:hover{
+      background-color:rgb(3, 75, 3);
+      color: chocolate;
+    }
+
+    .image-div .slide-images{
+      width: 145px;
+    }
+    .thumnail {
+      display: block;
+    }
+
+
+  }
+  @media(max-width:480px){
+    .image-div .slide-images{
+     
+    }
+
+        footer {
+          background-color: rgb(7, 1, 27);
+        }
+
+  }
+  
